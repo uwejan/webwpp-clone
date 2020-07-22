@@ -55,31 +55,42 @@ body {
     grid-area: CD;
 
     background-position: center;
-    background-size: 100% 100%;
+    background-repeat: initial;
+    /*background-size: 100% 100%;*/
     background-image: url(./fundo1.jpg);
 }
 
 .item2 {
     grid-area: UM;
-    background-color: red;
+
+    border: 1px solid rgba(0,0,0,0.08);
+    background-color:#F0F0F0;
 }
 
 .item3 {
     grid-area: CI;
-    background-color: rgb(255, 0, 179);
+    
+    padding: 10px 16px;
+
+    border: 1px solid rgba(0,0,0,0.08);
+    background-color: #EDEDED;
 }
 
 .item4 {
     grid-area: CL;
-    background-color: rgb(0, 26, 255);
+    border-right: 1px solid rgba(0,0,0,0.08);
+    border-top: 1px solid rgba(0,0,0,0.08);
+    background-color: #FFFFFF;
 }
 
 .item5 {
     grid-area: UI;
-    background-color: rgb(21, 255, 0);
+    background-color: #EDEDED;
 }
 
 .item6 {
     grid-area: SI;
-    background-color: rgb(0, 247, 255);
+
+    border-right: 1px solid rgba(0,0,0,0.08);
+    background-color: #F6F6F6;
 }
