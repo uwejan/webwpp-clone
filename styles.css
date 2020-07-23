@@ -35,7 +35,7 @@ body {
 
 #container {
     height: 100vh;
-    width: 1305px;
+    width: 100vw;
 
     position: relative;
     z-index: 1;
@@ -90,6 +90,9 @@ body {
     grid-area: CL;
 
     min-width: 200px;
+
+    display: flex;
+    flex-direction: column;
 
     border-right: 1px solid rgba(0,0,0,0.08);
     border-top: 1px solid rgba(0,0,0,0.08);
@@ -244,4 +247,28 @@ body {
     margin-left: 15px;
     font-weight: 400;
     font-size: 16px;
+}
+
+.item4 img{
+    height: 50px;
+    width: 50px; 
+    margin: 10px;
+    
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+#inst,
+#fav,
+#feedback {
+    display: flex;
+    align-items: center;
+
+    border-bottom:1px solid rgba(0,0,0,0.08);
+    margin-left: 15px;
+
+    font-family:  'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
