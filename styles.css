@@ -56,11 +56,17 @@ body {
 
     background-position: center;
     background-repeat: initial;
-    background-image: url(./fundo1.jpg);
+    background-image: url(./img/fundo1.jpg);
 }
 
 .item2 {
     grid-area: UM;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
 
     border: 1px solid rgba(0,0,0,0.08);
     background-color:#F0F0F0;
@@ -69,7 +75,12 @@ body {
 .item3 {
     grid-area: CI;
     
+    min-width: 200px;
     padding: 10px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     border: 1px solid rgba(0,0,0,0.08);
     background-color: #EDEDED;
@@ -77,6 +88,9 @@ body {
 
 .item4 {
     grid-area: CL;
+
+    min-width: 200px;
+
     border-right: 1px solid rgba(0,0,0,0.08);
     border-top: 1px solid rgba(0,0,0,0.08);
     background-color: #FFFFFF;
@@ -84,12 +98,150 @@ body {
 
 .item5 {
     grid-area: UI;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     background-color: #EDEDED;
 }
 
 .item6 {
     grid-area: SI;
 
+    min-width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-right: 1px solid rgba(0,0,0,0.08);
     background-color: #F6F6F6;
+}
+
+#search {
+    height: 35px;
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:white;
+
+    border: none;
+    border-radius: 16px;
+}
+
+#search img {
+    transform: rotate(270deg);
+
+    cursor: pointer;
+
+    height: 12px;
+    width: 12px;
+}
+
+#txtsearch {
+    outline: 0;
+    height: 35px;
+    width: 280px;
+ 
+    font-family:  'Ubuntu', sans-serif;
+    color:#919191;
+
+    border: none;
+    border-radius: 16px;
+
+    padding-left: 20px;
+}
+
+#message {
+    width: 100%;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#chat {
+    outline: 0;
+    height: 20px;
+    width: 90%;
+
+    font-family:  'Ubuntu', sans-serif;
+    font-size: 14px;
+    color:#919191;
+
+    padding: 9px 12px 11px;
+    margin: 5px 5px;
+
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 21px;   
+}
+
+#message img {
+    height: 25px;
+    width: 25px;
+
+    margin: 10px;  
+    cursor: pointer; 
+}
+
+#user {
+    display: flex;
+    align-items: center;
+
+    margin: 20px;
+}
+
+#user img,
+#icon img {
+    height: 40px;
+    width: 40px; 
+
+    transform: rotate(45deg);
+
+    border-radius: 50%;
+}
+
+.buttons{
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ret {
+    height: 18px;
+    width: 18px; 
+}
+
+.btn img,
+.buttons img {
+    height: 22px;
+    width: 22px; 
+    margin: 10px;  
+
+    cursor: pointer;
+} 
+
+#busca {
+    height: 18px;
+    width: 18px; 
+    transform: rotate(270deg);
+}
+
+#icon {
+    display: flex;
+    align-items: center;
+}
+
+#icon h1{
+    font-family:  'Ubuntu', sans-serif;
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 16px;
 }
