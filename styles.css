@@ -35,7 +35,7 @@ body {
 
 #container {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     position: relative;
     z-index: 1;
@@ -53,6 +53,8 @@ body {
 
 .item1 {
     grid-area: CD;
+
+    overflow: auto;
 
     background-position: center;
     background-repeat: initial;
@@ -89,6 +91,7 @@ body {
 .item4 {
     grid-area: CL;
 
+    overflow: auto;
     min-width: 200px;
 
     display: flex;
@@ -139,6 +142,8 @@ body {
 #search img {
     transform: rotate(270deg);
 
+    margin-left: 10px;
+
     cursor: pointer;
 
     height: 12px;
@@ -156,7 +161,7 @@ body {
     border: none;
     border-radius: 16px;
 
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 #message {
@@ -253,22 +258,49 @@ body {
     height: 50px;
     width: 50px; 
     margin: 10px;
-    
+
     border-radius: 50%;
 
     cursor: pointer;
 }
 
 #inst,
-#fav,
-#feedback {
+.user,
+#feedback,
+#fav {
+    display: flex;
+
+}
+
+#instcont,
+#favcont,
+.usercont,
+#feedcont {
     display: flex;
     align-items: center;
 
-    border-bottom:1px solid rgba(0,0,0,0.08);
-    margin-left: 15px;
+    width: 100%;
+    margin-left: 13px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.055);
 
     font-family:  'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 14px;
+}
+
+.item4::-webkit-scrollbar { 
+    -webkit-appearance: none; 
+    outline: none;
+ 
+    height: 0.5em;
+    background:#FFFFFF;
+    border-radius: 10%;
+}
+
+.item4::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+
+    background: #172329;
+    border-radius: 10px;
 }
