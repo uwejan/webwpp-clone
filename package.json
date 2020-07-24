@@ -1,0 +1,19 @@
+{
+  "name": "web-wpp-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianasmmattos/webwpp-clone.git"
+  },
+  "author": "Mariana Mattos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marianasmmattos/webwpp-clone/issues"
+  },
+  "homepage": "https://github.com/marianasmmattos/webwpp-clone#readme"
+}
