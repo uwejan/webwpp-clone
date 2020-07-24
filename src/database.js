@@ -13,25 +13,24 @@ db.serialize(() => {
    
    const query = `
         INSERT INTO places (
-            id INTEGER PRIMARY KEY AUTOINCREMENT
-            message,
+            message
         ) VALUES (
             ?
         );
     `
  
     const values = [
-        'mensagem'
+        "mensagem"
     ]
  
     function afterInsertData (err){
         if (err) {
             return console.log(err)
          }
-    }
+
+   }
  
     db.run(query, values, afterInsertData);
- 
 })
 
 db.serialize()
