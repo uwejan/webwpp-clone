@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/marianasmmattos/webwpp-clone/issues"
   },
-  "homepage": "https://github.com/marianasmmattos/webwpp-clone#readme"
+  "homepage": "https://github.com/marianasmmattos/webwpp-clone#readme",
+  "dependencies": {
+    "sqlite3": "^5.0.0"
+  }
 }
