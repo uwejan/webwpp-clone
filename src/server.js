@@ -1,8 +1,11 @@
 const express = require('express');
-const server = express();
+const server = new express();
+const db = require('./database')
 
-server.get("/", (req,res) => {
-    return res.render("index.html")
+server.use(express.static("src"))
+
+server.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
 })
 
 server.listen(3000);
