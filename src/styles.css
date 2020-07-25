@@ -62,6 +62,18 @@ body {
     background-image: url(/img/fundo1.jpg);
 }
 
+.texto {
+    width: fit-content;
+    margin-left: 50px;
+
+    padding: 6px 7px 8px 9px;
+    margin: 3px;
+    border-radius: 10px;
+
+    box-shadow: 1px rgba(0, 0, 0, 0.26);
+    background-color: #DCF8C6;
+}
+
 .item2 {
     grid-area: UM;
 
@@ -92,9 +104,11 @@ body {
 .item4 {
     grid-area: CL;
 
-    overflow: auto;
     min-width: 200px;
 
+    overflow: auto;
+
+    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -272,6 +286,16 @@ body {
 #fav {
     display: flex;
 
+}
+
+#fixed{
+    position: fixed;
+    background: white;
+    width: 300px;
+}
+
+#lista {
+    margin-top: 210px;
 }
 
 #instcont,
