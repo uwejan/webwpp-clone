@@ -80,7 +80,12 @@ fetchUsers();
         }
     })
 
+    input.addEventListener('blur', (event) => {
+        fetchUsers();
+    });
+
 })();
+
 //const db = request('./database')
 
 //function save(){
