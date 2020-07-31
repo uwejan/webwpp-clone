@@ -73,12 +73,13 @@ fetchUsers();
         `;
     }
 
-    input.addEventListener('keyup', (event) => {
+    input.addEventListener('keyup', (event) => {     
         let user = event.target.value;
-        if(user.length > 0){
-        getUser(user).then(res => showProfile(res))
-        }
-    })
+            if(user.length > 0){
+            getUser(user).then(res => showProfile(res))
+            }
+        
+    }) 
 
     input.addEventListener('blur', (event) => {
         fetchUsers();
