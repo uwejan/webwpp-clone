@@ -50,8 +50,6 @@ fetchUsers();
 (function(){
     let lista= document.getElementById('lista');
     const input = document.getElementById('txtsearch');
-    let filtro = input.value.toLowerCase();
-    const btn = document.getElementById('usersearch');
     const api = 'https://api.github.com/users';
     const clientId = 'Iv1.026a5ce36f373e21';
     const clientSecret = 'abb93829946907c1879cc6744721d2c745ec67f7';
@@ -87,34 +85,34 @@ fetchUsers();
 
 })();
 
-//const db = request('./database')
+const db = request('./database')
 
-//function save(){
-//    var mensagem = document.getElementById('chat').value;
+function save(){
+    var mensagem = document.getElementById('chat').value;
 
-//    db.run(function(){
-//        ('INSERT INTO places (message) VALUES (?)',[mensagem]);
-//    });
-//}
+    db.run(function(){
+        ('INSERT INTO places (message) VALUES (?)',[mensagem]);
+    });
+}
+save();
 
-//save();
-
-//function show(){
-//    db.all(`SELECT * FROM places`, [], function (err, rows) {
-//        var chat = document.getElementById('msg');
-//        var mensagens = '';
-//    
-//        for (var i = 0; i < rows.length; i++) {
+function show(){
+    var chat = document.getElementById('msg');
+    db.all(`SELECT * FROM places`, [], function (err, rows) {
+        var mensagens = '';
+    
+        for (var i = 0; i < rows.length; i++) {
         
-//            mensagens += `
-//            <div class="texto">
-//            ${rows[i].message}
-//            </div>`
+            mensagens += `
+            <div class="texto">
+            ${rows[i].message}
+            </div>`
 
-//            console.log(rows)
-//        }
-//        chat += mensagens
-//    })
-//}
+            console.log(rows)
+        }
 
-// show();
+        chat += mensagens
+    })
+}
+
+ show();
